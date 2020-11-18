@@ -1,0 +1,39 @@
+.quizz{
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.divQuestion{
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.propositions{
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.reponseHaut, .reponseBas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.propositions input{
+    width: 45%;
+    height: 2.5em;
+}
+
+
+

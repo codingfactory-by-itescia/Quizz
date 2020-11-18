@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Quiz: Inscription</title>
+        <link rel="stylesheet" href="profil.css">
+        <link href="https://fonts.googleapis.com/css2?family=Jost&family=Merienda+One&display=swap" rel="stylesheet">
+        <link rel="icon" href="Assets/Images/logo_quiz.ico" />
+    </head>
+
+        <body>
+
+            <header>
+
+                <a class="lien" href="accueil.html">
+                
+                    <img class="petitLogo" src="Assets/Images/logo_quiz.png" alt="logo" />
+                </a>
+                
+                <div class="Connexion">
+
+                    <p id="texteIndicatif">Déjà un compte?</p>
+                    <a href="profil2.html" class="boutonHautDroite"> Connexion </a>
+                </div>
+
+            </header>
+
+                <div id="grande_image">
+
+                    <img class="logo" src="Assets/Images/logo_quiz.png" alt="grande_image">
+
+                </div>
+            
+            
+                <div class="Inscrire">
+                    <form action="accueil.html" method="POST" id="inscription">
+                        <h1>Créer votre compte</h1>
+
+                        <h2>E-mail</h2>
+
+                        <input id="emailAddress" type="email" placeholder="default@example.com" size="25" minlength="6" maxlength="45">
+
+                        <h2>Mot de passe</h2>
+
+                        <div class="password_container">
+
+                            <input id="password" type="password" size="25" minlength="8" maxlength="30"><br/>
+                            <input id="checkbox" type="checkbox" onclick="showPassword()"> Montrer mot de passe
+
+                        </div>
+
+                        <span style="color: red;" id="erreurPassword"></span>
+
+                        <h2>Confirmation du mot de passe</h2>
+
+                        <div class="password_container">
+
+                        <input id="password2" type="password" size="25" minlength="8" maxlength="30"><br/>
+                        <input id="checkbox" type="checkbox" onclick="showPassword2()"> Montrer mot de passe
+
+                        </div>
+
+                        <input type="submit" id="valider" value="S'inscrire">
+
+                     </form>
+
+                <span style="color: red;" id="erreur"></span>    
+            
+                </div>
+
+        </body>
+
+</html>

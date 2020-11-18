@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Quiz: Connexion</title>
+        <link rel="stylesheet" href="profil2.css">
+        <link href="https://fonts.googleapis.com/css2?family=Jost&family=Merienda+One&display=swap" rel="stylesheet">
+        <link rel="icon" href="Assets/Images/logo_quiz.ico" />
+    </head>
+
+        <body>
+
+            <header>
+
+                <a class="lien" href="accueil.html">
+                
+                    <img class="petitLogo" src="Assets/Images/logo_quiz.png" alt="logo" />
+                </a>
+                
+                <div class="Inscription">
+
+                    <p id="texteIndicatif">Voulez-vous vous inscrire?</p>
+                    <a href="profil.html" class="boutonHautDroite"> Inscription </a>
+                </div>
+
+            </header>
+            
+            <div id="grande_image">
+
+                <img class="logo" src="Assets/Images/logo_quiz.png" alt="grande_image">
+
+            </div>
+            
+            <div class="Connecter">
+                <form action="profil.html" method="POST" id="connect">
+                        <h1>Connectez-vous</h1>
+
+                        <h2>E-mail</h2>
+
+                        <input id="emailAddress" type="email" placeholder="default@example.com" size="25" minlength="6" maxlength="45">
+                    
+                        <h2>Mot de passe</h2>
+
+                    <div class="password_container">
+
+                        <input id="password" type="password" size="25" minlength="8" maxlength="30"><br/>
+                        <input id="checkbox" type="checkbox" onclick="showPassword()"> Montrer mot de passe
+
+                    </div>
+
+                    <input type="submit" id="valider" value="Se connecter">
+                </form>
+                    
+                    <span style="color: red;" id="erreurPassword"></span>
+
+            </div>
+        
+        </body>
+        
+</html>

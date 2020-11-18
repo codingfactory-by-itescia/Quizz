@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    padding-bottom: 1%;
+    position: fixed;
+    background:linear-gradient(rgb(128, 128, 128),rgba(128, 128, 128, 0.014));
+}
+
+.petitLogo{
+   width: 8%;
+   margin-top: 1%;
+    
+}
+
+#grande_image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -7%;
+}
+
+
+.logo {
+    margin-top: 10%;
+    width: 10%;
+    align-items: center;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-family: 'Jost', sans-serif;
+}
+
+.Inscription{
+    padding-right: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    margin-top: 1%;
+
+}
+
+.boutonHautDroite{
+    padding-left: 4%;
+    padding-right: 4%;
+    background: black;
+    border-radius: 10px;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+}
+
+.boutonHautDroite:hover{
+    color: red;
+    transition: 0.60s;
+}
+
+#texteIndicatif{
+    padding-right: 3%;
+    text-align: center;
+}
+
+#emailAddress, #password{
+    width: 80%;
+}
+
+#password{
+    margin-left: 8%;
+}
+
+#emailAddress{
+    margin-left: 0.12%;
+    margin-bottom: 5%;
+    font-size: 13px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Jost', sans-serif;
+}
+
+.password_container{
+
+    width: 100%;
+    margin: none;
+    align-items: center;
+    border: none;
+    color: white;
+    flex-direction: column;
+}
+
+.password_container input{
+    font-size: 13px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Jost', sans-serif;
+}
+
+.Connecter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    border-radius: 10px;
+    background: rgba(41, 44, 41, 0.8);
+    margin-top: 7%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 2.5%;
+    margin-bottom: 2%;
+}
+
+#connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    width: 80%;
+    margin-bottom: 2%;
+}
+
+#erreur{
+    margin-top: 3%;
+}
+
+#checkbox{
+    margin-top: 3%;
+    margin-left: 33%;
+}
+
+#valider{
+    padding-left: 4%;
+    padding-right: 4%;
+    background: black;
+    border-radius: 10px;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: white;
+    font-size: 135%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-top: 10%;
+    margin-right: 7%;
+    align-self: flex-end;
+    font-family: 'Jost', sans-serif;
+}
+
+#valider:hover{
+    color: red;
+    transition: 0.60s;
+}

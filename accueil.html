@@ -1,0 +1,179 @@
+<html lang="en,fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>QuopiQuizz</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Merienda+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="Assets/Images/logo_quiz.ico" />
+</head>
+
+<body>
+    
+    <header class="site-header" id="header">
+        <div class="nav">
+            <div class="nav-gauche">
+                <a  class="lien" href="accueil.html">                    
+                    <img class ="logo" src="https://quipoquiz.com/sn_uploads/grid/quiz.png" alt="logo">                   
+                </a>                
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" id="btn_catégorie" type="button" data-toggle="dropdown">Catégories
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="nav-droite"> 
+                <label class="switch" id="darkButton"> 
+                    <button class="button1" onclick="myFunction()" style="vertical-align:middle"> <span><img src="https://img.icons8.com/color/38/000000/darth-vader.png"/></span> </button>
+                    <span class="slider round"></span>
+                </label>
+                <a class="profil" href="profil.html">
+                <img id="logoProfil" src="Assets/Images/profil_icon.png" alt="logoProfil">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <p class="discover"> Découvrez notre large selection de quizz 😏</p>
+        <p class="title">Les Sports</p>
+        <div class="sports"> 
+            <div class="basketball">
+                <a href="quiz-basket">
+                    <img  class="img" src="https://quipoquiz.com/sn_uploads/quizzes/thumbnail_basketball_fr_v2.jpg?" width="300" height="190" alt="basket" id="basket">
+                </a>
+            </div>
+            <div class="football">
+                <a href="quiz-foot">
+                    <img  class="img" src="https://quipoquiz.com/sn_uploads/quizzes/thumbnail_foot_fr.jpg?" width="300" height="190" alt="foot" id="foot">
+                </a>
+            </div>
+            <div class="athletisme">
+                <a href="quiz-athletisme">
+                    <img  class="img" src="https://quipoquiz.com/sn_uploads/quizzes/ATHLETISME-FR.jpg?" width="300" height="190" alt="athletisme" id="athletisme">
+                </a>
+            </div>
+            <div class="tennis">
+                <a href="quiz-tennis">
+                    <img  class="img" src="https://quipoquiz.com/sn_uploads/quizzes/tennis_FR.jpg?maxw=600" width="300" height="190" alt="tennis" id="tennis">
+                </a>
+            </div>
+        </div>
+
+        <p class="title">L'Histoire</p>
+        <div class="histoire"> 
+            <div class="XVIIIeme">
+                <a href="quiz-18eme">
+                    <img class="img" src="https://quipoquiz.com/sn_uploads/quizzes/18eSiecle-FR.jpg?maxw=600" width="300" height="190" alt="18eme" id="18eme">
+                </a>
+            </div>
+            <div class="samourai">
+                <a href="quiz-samourai">
+                    <img class="img" src="https://quipoquiz.com/sn_uploads/quizzes/SAMOURAI_FR.jpg?maxw=600" width="300" height="190" alt="samourai" id="samourai">
+                </a>
+            </div>
+            <div class="histoireFR">
+                <a href="quiz-histoireFR">
+                    <img class="img" src="https://quipoquiz.com/sn_uploads/quizzes/thumbnail_histoirefrancais.jpg?maxw=600" width="300" height="190" alt="histoireFR" id="histoireFR">
+                </a>
+            </div>
+            <div class="IerGM">
+                <a href="quiz-1erGM">
+                    <img class="img" src="https://quipoquiz.com/sn_uploads/quizzes/firstworldwar_FR.jpg?maxw=600" width="300" height="190" alt="1erGM" id="1erGM">
+                </a>
+            </div>
+        </div>
+
+        <p class="title">Les Animaux</p>
+        <div class="animaux"> 
+            <div class="savane">
+                <a href="quiz-savane">
+                    <img class="img" src="https://quipoquiz.com/sn_uploads/quizzes/ANIMAUX-SAVANE_FR_1.jpg?maxw=600" width="300" height="190" alt="savane" id="savane">
+                </a>
+            </div>
+            <div class="felins">
+                <a href="felins">
+                    <img class="img" src="https://quipoquiz.com/sn_uploads/quizzes/feline_fr.jpg?maxw=600" width="300" height="190" alt="felins" id="felins">
+                </a>
+            </div>
+            <div class="dog">
+                <a href="dog">
+                    <img class="img" src="https://quipoquiz.com/sn_uploads/quizzes/dogs_fr.jpg?maxw=600" width="300" height="190" alt="dog" id="dog">
+                </a>
+            </div>
+            <div class="marin">
+                <a href="marin">
+                    <img class="img" src="https://quipoquiz.com/sn_uploads/quizzes/underwater_FR.jpg?maxw=600" width="300" height="190" alt="marin" id="marin">
+                </a>
+            </div>
+        </div>
+     </div>
+
+<footer class="site-footer" >
+    <div class="container">
+        <div class="box  actu">
+            <div>
+                <p>Actu site</p>
+            </div>
+            <div>
+                <p class="p_actu">Mise a jour 1.1 - Ajout de
+                    nouvelles fonctionnalités
+                     Pollicitos adminicula 
+                    oppressi omnium culpasse praediximus
+                     tribunos gentilitatem tribunos
+                    Eusebius sub Eusebius vocabulis
+                     appellatos ut Eusebius 
+                    culpasse enim molitioni sub culpasse 
+                     ob vivendi Eusebius Montium 
+                    vocabulis fabricarum nominum
+                     ob pollicitos.
+                </p>
+            </div>
+        </div>
+        <div class="box  login">
+            <div>
+                <p>Connectez-vous</p>
+            </div>
+            <div>
+                <p class= "p_loggin">
+                     Pollicitos adminicula 
+                    oppressi omnium culpasse praediximus
+                     tribunos gentilitatem tribunos
+                    Eusebius sub Eusebius vocabulis
+                     appellatos ut Eusebius 
+                    culpasse enim molitioni sub culpasse 
+                     ob vivendi Eusebius Montium 
+                    vocabulis fabricarum nominum
+                     ob pollicitos.
+                </p>
+            </div>
+        </div>
+        <div class="box social">
+            <div>
+                <p>Réseaux sociaux</p>
+            </div>
+            <div>
+                <ul class="p_network">
+                    <li><img src="Assets/Images/facebook.png" width="6%">Facebook</li>
+                    <li><img src="Assets/Images/twitter.png" width="6%">Twitter</li>
+                    <li><img src="Assets/Images/instagram.jpeg" width="6%">Instagram</li>
+                    <li><img src="Assets/Images/google.png" width="6%">Google</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p id="copyrightDate">
+            © Copyright 2020 QuopiQuizz & ClickHere Studios - Tous droits réservés.
+    </div>
+</footer>
+
+</body>
+</html>
+<script src="./javascript.js"></script>

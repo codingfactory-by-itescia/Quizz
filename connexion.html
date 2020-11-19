@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>QopiQuiz - Connexion</title>
+        <link rel="stylesheet" href="connexion.css">
+        <link href="https://fonts.googleapis.com/css2?family=Jost&family=Merienda+One&display=swap" rel="stylesheet">
+        <link rel="icon" href="Assets/Images/logo_quiz2.ico" />
+    </head>
+
+        <body>
+
+            <header>
+
+                <a class="lien" href="accueil.html">
+                
+                    <img class="petitLogo" src="Assets/Images/logo_quiz.png" alt="logo" />
+                </a>
+                
+                <div class="Inscription">
+
+                    <p id="texteIndicatif">Voulez-vous vous inscrire?</p>
+                    <a href="inscription.html" class="boutonHautDroite"> Inscription </a>
+                </div>
+
+            </header>
+            
+            <div class="Connecter">
+                <form action="accueil.html" method="POST" id="connect">
+                        <h1>Connectez-vous</h1>
+
+                        <h2>E-mail 📧</h2>
+
+                        <input id="emailAddress" type="email" size="25" minlength="6" maxlength="45">
+                    
+                        <h2>Mot de passe 🔒</h2>
+
+                    <div class="password_container">
+
+                        <input id="password" type="password" size="25" minlength="8" maxlength="30"><br/>
+                        <input id="checkbox" type="checkbox" onclick="showPassword()"> Montrer mot de passe
+
+                    </div>
+
+                    <input type="submit" id="valider" value="Se connecter">
+                </form>
+                    
+                    <span style="color: red;" id="erreur"></span>
+
+            </div>
+            
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="box social">
+                        <div class="titre">
+                            <p>Réseaux sociaux</p>
+                        </div>
+                            <div>
+                                <ul class="p_network">
+                                    <li><a target="blank" href="https://www.facebook.com/itescia/"> <button class="fa fa-facebook" style="vertical-align:middle"><span><img src="Assets/Images/facebook.png" width="10%"><span></a></li>
+                                    <li><a target="blank" href="https://twitter.com/itescia"> <button class="fa fa-twitter" style="vertical-align:middle"><span><img src="Assets/Images/twitter.png" width="10%"><span></a></li> 
+                                    <li><a target="blank" href="https://www.itescia.fr/"> <button class="fa fa-google" style="vertical-align:middle"><span><img src="Assets/Images/google.png" width="10%"><span></a></li>
+                                </ul>
+                            </div>
+                     </div>
+                        <div class="box  actu">
+                            <div class="titre">
+                                <p>Changelog Qopi</p>
+                            </div>
+                            <div>
+                                <p class="p_actu">Mise a jour 0.3 - Ajout de
+                                    nouvelles fonctionnalités. </br>
+                                     - Création et ajout des quizz sur le Sport et l'Histoire.</br>
+                                     - Mise en place d'un bouton intuitif de "retour en haut de page".</br>
+                                     - Application de la DoF avec des chants disneys qualitatifs entre autre (sortez moi de cette équipe svp).</br>
+                                </br>
+                                     Mise à jour 0.2 - Ajout de nouvelles fonctionnalités. </br>
+                                     - Selection judicieuse et originale du contenu quizz. </br>
+                                     - Ajout d'un "Mode Sombre" d'une qualité exceptionnellement pauvre. </br>
+                                </br>
+                                    Mise à jour 0.1 - Ajout de nouvelles fonctionnalités. </br>
+                                    - Ping pong entre potes. </br>
+                                    - Création principale du site web. </br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box  login">
+                            <div class="titre">
+                                <p>Connectez-vous</p>
+                            </div>
+                            <div>
+                                <p class= "p_loggin">
+                                     Pour profiter une meilleur qualité de jeu et personnaliser votre 
+                                     aventure QuopiQuizz, nous vous invitons à vous connecter ou 
+                                     vous inscrire immédiatement! (cherchez pas à cliquer c'est que 
+                                     du texte ptdr).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="upPage">
+                            <a href="#" class="btnUp"><span><img src="https://static.thenounproject.com/png/1407193-200.png" height="50px" width="50px"/></span></a>
+                        </div>
+                    </div>
+                
+                    <div class="copyright">
+                        <p id="copyrightDate">
+                            © Copyright 2020 QopiQuizz & ClickHere Studios - Tous droits réservés.
+                    </div>
+                
+                </footer>
+                   
+    </body>
+</html>
+
+<script src="connexion.js">
+
+</script>

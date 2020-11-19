@@ -1,17 +1,113 @@
-.quizz{
-    margin-top: 10%;
-    margin-left: 15%;
+header{
+    width: 100%;
+    top:7%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    padding-bottom: 1%;
+    position:relative;
+    z-index: 1;
+    background:linear-gradient(rgb(50,205,50),rgb(159, 230, 159));
+    font-size: 0.7em;
+}
+
+/* En-tête*/
+
+.petitLogo{
+   width: 25%;
+   margin-top: 1%;
+    
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-family: 'Jost', sans-serif;
+}
+
+.Connexion{
+    padding-right: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    margin-top: 1.5%;
+
+}
+
+.boutonHautDroite{
+    padding-left: 4%;
+    padding-right: 4%;
+    background: #4D4C4B;
+    border-radius: 10px;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+}
+
+.boutonHautDroite:hover{
+    color: rgb(50,205,50);
+    transition: 0.60s;
+}
+
+#texteIndicatif{
+    padding-right: 5%;
+    text-align: center;
+    
+}
+
+
+.quizz, .reponseAnecdote, .difficulté, .scoreFinal{
+    height: 23em;
+    padding: 1rem;
+    width: 420px;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08);
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+    border-radius: 30px;
+    margin : auto;
+    margin-top: 5em;
     width: 70%;
     border: 1px solid black;
     border-radius: 10px;
+    background-color: rgb(235, 235, 235);
 }
 
-.divQuestion{
+.divDifficulté{
+    border-radius: 10px;
     height: 5em;
+    font-size: 1.3em;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-color: white;
+    border-radius: 10px;
+}
+.divQuestion{
+    height: 5em;
+    background-color: rgb(206, 206, 206);
+    font-size: 1.3em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divNumeroQuestion{
+    text-align: center;
+    font-size: 1.1em;
 }
 
 .propositions{
@@ -19,7 +115,24 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
+    background-color: white;
+}
+
+.boutonsDiff{
+    height: 12em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boutonsDiff input{
+    width: 45%;
+    height: 3em;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 10px;    
+    font-family: 'Jost', sans-serif;
 }
 
 .reponseHaut, .reponseBas{
@@ -30,10 +143,86 @@
     align-self: center;
 }
 
+
 .propositions input{
     width: 45%;
-    height: 2.5em;
+    height: 3em;
+    font-size: 1em;
+}
+/*
+    Partie Réponse
+*/
+#question{
+    border-radius: 10px;
+    
+}
+.reponseAnecdote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#questionReponse{
+    font-size: 1.1em;
+    text-align: center;
+}
+#reponse{
+    font-size: 1.8em;
+    text-align: center;
+}
+#anecdote{
+    font-size: 1.2em;
+    text-align: center;
+}
+#suivant{
+    width: 30%;
+    height: 3em;
+    font-size: 1em;
+    font-family: 'Jost', sans-serif;
+    border-radius: 10px;
 }
 
+#suivant:hover{
+    background-color: rgb(50,205,50);
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.rouge{
+    color: red;
+}
+.vert{
+    color: green;
+}
+/*
+    Partie Fin de Partie
+*/
 
 
+#votreScore{
+    margin: 0;
+    font-size: 5em;
+}
+.scoreFinal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.scoreFinal h3{
+    margin: 0;
+    font-size: 2em;
+}
+.scoreFinal input{
+    width: 15em;
+    height: 3em;
+}
+
+#crono {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+body {
+    background-color: #ffffff;
+}

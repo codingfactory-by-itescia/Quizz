@@ -2,21 +2,56 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>maxime J aime les porte</title>
-    <link rel="icon" href="logo_quiz.ico" />
+    <title>Quiz</title>
+    <link rel="icon" href="Assets/Images/logo_quiz2.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Merienda+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styleQuizz.css">
 </head>
 <body>
+    <header>
+        <div class="nav">
+            <a class="lien" href="accueil.html">
+                
+                <img class="petitLogo" src="Assets/Images/logo_quiz.png" alt="logo" />
+            </a>
 
-    <div class="quizz">
-        <div class="divQuestion">
-            <p id="question">Question</p>
+            <div class="Connexion">
+
+                <p id="texteIndicatif">Déjà un compte?</p>
+                <a href="connexion.html" class="boutonHautDroite"> Connexion </a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <div class="difficulté" id="difficulté">
+        <div class="divDifficulté">
+            <p> Choisir la difficulté du Quizz :</p>
         </div>
         
+        <div class="boutonsDiff">
+                <input type="button" id="btnDébutant" value="Débutant">
+                <input type="button" id="btnConfirmé" value="Confirmé">
+                <input type="button" id="btnExpert" value="Expert">
+        </div>
+    </div>
+
+    
+
+    <div class="quizz" id="quizz" style="display: none;">
+        <div class="divNumeroQuestion">
+            <p id="numeroQuestion"></p>
+        </div>
+        <div class="divQuestion">
+            <p id="question"></p>
+        </div>
+        
+
         <div class="propositions">
 
             <div class="reponseHaut">
-                <input type="button" id="reponse0" value="Réponse 1" >
+                <input type="button" id="reponse0" value="Réponse 1">
                 <input type="button" id="reponse1" value="Réponse 2">
             </div>
 
@@ -26,12 +61,28 @@
             </div>
            
         </div>
+        <div id="crono"></div>
 
     </div>
 
+    <div class="reponseAnecdote" id="reponseAnecdote" style="display: none;">
+        <p id="questionReponse"></p>
+        <p id="reponse"></p>
+        <p id="anecdote"></p>
+        <button id="suivant"></button>
+    </div>
+
+    <div class="scoreFinal" id="scoreFinal" style="display: none;">
+        <h3>Votre score est de</h3>
+        <p id="votreScore"></p>
+        <form action="accueil.html">
+            <input type="submit" value="Retour au menu" />
+        </form>
+    </div>
 
 </body>
+
 <html>
+<script src='quizz.js'>
 
-
-<script src='quizz.js'></script>
+</script>
